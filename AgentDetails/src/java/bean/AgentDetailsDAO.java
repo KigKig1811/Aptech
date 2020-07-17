@@ -234,7 +234,7 @@ public class AgentDetailsDAO {
      
       public long checkratingYet(int agentId) throws ClassNotFoundException, SQLException {
         setCon();
-        long id = 0;
+        int id = 0;
         String sql = "select count(RateId) AS numrating from rating where agentId"
                 + " =?";
         try {
