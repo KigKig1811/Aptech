@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="userAdvDetails" type="tns:userAdvDetails"/>
+
+<xs:element name="viewHistoryTransaction" type="tns:viewHistoryTransaction"/>
+
+<xs:element name="viewHistoryTransactionResponse" type="tns:viewHistoryTransactionResponse"/>
+
+<xs:complexType name="viewHistoryTransaction">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewHistoryTransactionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userAdvDetails" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userAdvDetails">
+<xs:sequence>
+<xs:element name="advId" type="xs:int" minOccurs="0"/>
+<xs:element name="advTitle" type="xs:string" minOccurs="0"/>
+<xs:element name="agentAccount" type="xs:string" minOccurs="0"/>
+<xs:element name="agentId" type="xs:int" minOccurs="0"/>
+<xs:element name="dateUp" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="expDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="onemonth" type="xs:double"/>
+<xs:element name="orderId" type="xs:int" minOccurs="0"/>
+<xs:element name="seLLAccount" type="xs:string" minOccurs="0"/>
+<xs:element name="seLLId" type="xs:int" minOccurs="0"/>
+<xs:element name="sixmonths" type="xs:double"/>
+<xs:element name="subTotal" type="xs:double" minOccurs="0"/>
+<xs:element name="threemonths" type="xs:double"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

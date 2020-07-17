@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice/">
+
+<xs:element name="follow" type="tns:follow"/>
+
+<xs:element name="followNew" type="tns:followNew"/>
+
+<xs:element name="followNewResponse" type="tns:followNewResponse"/>
+
+<xs:element name="showAll" type="tns:showAll"/>
+
+<xs:element name="showAllResponse" type="tns:showAllResponse"/>
+
+<xs:complexType name="followNew">
+<xs:sequence>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="seLLId" type="xs:int" minOccurs="0"/>
+<xs:element name="modeId" type="xs:int" minOccurs="0"/>
+<xs:element name="cateId" type="xs:int" minOccurs="0"/>
+<xs:element name="header" type="xs:string" minOccurs="0"/>
+<xs:element name="content" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:double"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="street" type="xs:string" minOccurs="0"/>
+<xs:element name="userdistrictId" type="xs:string" minOccurs="0"/>
+<xs:element name="ward" type="xs:string" minOccurs="0"/>
+<xs:element name="cityProvince" type="xs:string" minOccurs="0"/>
+<xs:element name="area" type="xs:double"/>
+<xs:element name="photohumbnail" type="xs:string" minOccurs="0"/>
+<xs:element name="dataUp" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="expDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="agentId" type="xs:int" minOccurs="0"/>
+<xs:element name="agentAcount" type="xs:string" minOccurs="0"/>
+<xs:element name="sellAcount" type="xs:string" minOccurs="0"/>
+<xs:element name="approved" type="xs:boolean"/>
+<xs:element name="paid" type="xs:boolean"/>
+<xs:element name="bedroom" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="followNewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="showAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:follow" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="follow">
+<xs:sequence>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="advId" type="xs:int" minOccurs="0"/>
+<xs:element name="agentAcount" type="xs:string" minOccurs="0"/>
+<xs:element name="agentId" type="xs:int" minOccurs="0"/>
+<xs:element name="approved" type="xs:boolean"/>
+<xs:element name="area" type="xs:double"/>
+<xs:element name="bedroom" type="xs:int"/>
+<xs:element name="cateId" type="xs:int" minOccurs="0"/>
+<xs:element name="cityProvince" type="xs:string" minOccurs="0"/>
+<xs:element name="content" type="xs:string" minOccurs="0"/>
+<xs:element name="dateUp" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="district" type="xs:string" minOccurs="0"/>
+<xs:element name="expDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="header" type="xs:string" minOccurs="0"/>
+<xs:element name="modeId" type="xs:int" minOccurs="0"/>
+<xs:element name="paid" type="xs:boolean"/>
+<xs:element name="photothumbnail" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:double"/>
+<xs:element name="seLLId" type="xs:int" minOccurs="0"/>
+<xs:element name="sellAcount" type="xs:string" minOccurs="0"/>
+<xs:element name="street" type="xs:string" minOccurs="0"/>
+<xs:element name="userId" type="xs:int" minOccurs="0"/>
+<xs:element name="ward" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
